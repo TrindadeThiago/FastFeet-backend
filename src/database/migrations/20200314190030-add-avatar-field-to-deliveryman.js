@@ -10,6 +10,6 @@ module.exports = {
   },
 
   down: queryInterface => {
-    return queryInterface.dropTable('deliverymans', 'avatar_id');
+    return queryInterface.removeColumn('deliverymans', 'avatar_id');
   },
 };
